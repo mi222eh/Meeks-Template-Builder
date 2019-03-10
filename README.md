@@ -1,2 +1,3 @@
 # Meeks-Template-Builder
-Build templates with dependencies inside your templates.
+A simple tool to build templates.
+With the added feature to inject dependencies inside your templates.
