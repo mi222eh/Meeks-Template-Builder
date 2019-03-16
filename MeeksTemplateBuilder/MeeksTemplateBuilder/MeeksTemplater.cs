@@ -27,7 +27,7 @@ namespace MeeksTemplateBuilder
                 string property = match.Value.Replace("[", "").Replace("]", "");
                 if (PropertyList.TryGetValue(property, out Value))
                 {
-                    TextValue = Value.ToString();
+                    TextValue = Value == null ? "" : Value.ToString();
                 }
                 html = html.Replace(match.Value, TextValue);
                 match = regex.Match(html);
